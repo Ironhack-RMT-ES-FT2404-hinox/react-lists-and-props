@@ -1,37 +1,19 @@
 import './App.css'
+import Characters from './components/Characters'
+import FoodMenu from './components/FoodMenu'
+import List from './components/List'
 
 function App() {
 
-  let unString = "patata"
-
-  let stringArr = ["patatas", "tomates", "lechugas", "aguacates", "patatas"]
-
-  // como traducimos un array de strings a un array donde cada elemento se vea como un JSX
-
-  // let jsxArr = [<li>patatas</li>, <li>tomates</li>, <li>lechugas</li>, <li>aguacates</li>]
-
-  // let jsxArr = stringArr.map((eachString) => {
-  //   return (
-  //     <li>{eachString}</li>
-  //   )
-  // })
 
   return (
     <>
       
-      {/* {unString} */}
+      {/* <List /> */}
 
-      {/* {stringArr} */}
+      {/* <Characters /> */}
 
-      {/* {jsxArr} */}
-
-      <h1>Lista de vegetales</h1>
-
-      { stringArr.map((eachString, index) => {
-        return (
-          <p key={index}>{eachString}</p>
-        )
-      }) }
+      <FoodMenu />
 
     </>
   )
